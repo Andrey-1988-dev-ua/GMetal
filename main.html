@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="settings.css">
-
+  
 
 </head>
 
@@ -18,16 +18,15 @@
         <form>
             <Label style="background-color: rgb(235, 227, 227)" ; for="user login"> login </Label>
             <input id="user login" type="text" name="user login" valut="user login">
-            <br>
+
             <Label style="background-color: rgb(235, 227, 227)" ; for="user password"> password </Label>
             <input id="user password" type="password" name="password" valut="password">
             <a href=""></a>
             <button>registration</button>
         </form>
     </div>
-
     <hr>
-    <div class="request">
+    <div class="request" style="float: left; width: 330px; height: 550px;">
         <h3>FAST REQUEST</h3>
         <form action="/action.page.php">
             <label for="gradelist"><strong>Grade</strong></label>
@@ -39,7 +38,6 @@
                 <option value="1.4541/321">1.4541/321</option>
                 <option value="1.4571/316Ti">1.4571/316Ti</option>
             </select>
-
             <input type="radio" id="hot-rolled" name="option1" value="hot-rolled">
             <label for="HT">hot-rolled</label>
             <input type="radio" id="forged" name="option1" value="forged">
@@ -74,20 +72,16 @@
             <br>
             <tr><strong>&#129349;Quantity</strong></tr>
             <label for="quantity"></label>
-            <input type="number" id="quantiy" step="3" value="MOQ 3t" minlength="0" maxlength="300">
+            <input type="number" id="quantiy" step="3" value="MOQ 3t">
             <br>
             <tr>&#128197;<strong>Lead time</strong></tr>
             <label for="leadtime"></label>
             <input type="month" id="leadtime" value="when its happen">
             <br>
-            <tr>&#128666;<strong>Delivery conditions:</strong></tr>
+            <tr><strong>Delivery: FCA&#127981;.DDP&#128666;.CFR&#128674;</strong></tr>
             <br>
-            <label for="FCA">FCA</label>
-            <input id="FCA" name="conditions" type="checkbox">
-            <label for="DAP">DDP</label>
-            <input id="DAP" name="conditions" type="checkbox">
-            <label for="CFR">CFR</label>
-            <input id="CFR" name="conditions" type="checkbox">
+            <label for="delivery type"><strong>conditions</strong></label>
+            <input id="delivery type" name="2" type="range" min="1" max="3" value="Andrea">
             <br>
             <label for="INS">packaging</label>
             <input id="INS" name="conditions" type="checkbox">
@@ -96,30 +90,116 @@
             <label for="customs clearence">cst.clearence</label>
             <input id="customs clearence" name="conditions" type="checkbox">
             <br>
-            <label id="Comments"><strong>&#128466;Comments</strong></label>
+            <label id="Comments"><strong>&#128466;Comments (short)</strong></label>
             <br>
-            <textarea id="Comments" cols="40" rows="5">
-          </textarea>
+            <textarea id="Comments" cols="40" rows="5" maxlength="150">
+            </textarea>
             <br>
+            <label for="Discount"></label>
+            <input id="Discount" value="dicsount code ####" pattern="[0-9]{1,4}">
             <input style="background-color: yellow" type="submit" value="SEND">
+
         </form>
     </div>
 
-    <div class="about_us">
+    <div class="about_us" style="float: left; width: 380px; height: 550px;">
         <h3>ABOUT US</h3>
-         <p>The <strong>GMETAL</strong> has increased its sales/distribution network with the creation of several  productive and commercial subsidiaries in strategic geographical areas around the world which support the distribution and production of ukranian mill. </p>
-         <p><em><strong>Our metal is used to</strong> produce parts for vehicles and machinery, seamless tubes and bearings, tools for further processing of metals and alloys.</em></p>
-         <p>The quality management system GMETAL is certified for compliance with the international standard ISO 9001: 2015 by the certification body TÜV Thüringen eV (Germany), the official representative of which in Ukraine is TÜV Thüringen Ukraine.</p>
+        <p>The <strong>GMETAL</strong> has increased its sales/distribution network with the creation of several
+            productive and commercial subsidiaries in strategic geographical areas around the world which support the
+            distribution and production of ukranian mill. </p>
+        <p><em><strong>Our metal is used to produce:</strong>
+                <ol>- parts for vehicles and machinery</ol>
+                <ol>- seamless tubes and bearings</ol>
+                <ol>- tools for further processing of metals.</ol>
+            </em>
+        </p>
+        <hr>
+        <p>The quality management system GMETAL is certified for compliance with the international standard ISO 9001:
+            2015 by the certification body TÜV Thüringen eV (Germany), the official representative of which in Ukraine
+            is TÜV.</p>
+
     </div>
 
-    <div class = "Quality of the products">
-    
+    <div class="LinksQuality" style="float: left; width: 400px; height: 550px;">
+        <h3>Useful links</h3>
+        <a href="https://www.cogne.com/en/extra-di-lega">Alloy Surcharges, </a>
+        <a href="https://bank.gov.ua/ua/markets/exchangerates">Currency Rate,</a>
+        <a href="https://www.rapidtables.com/convert/length/inch-to-mm.html">Size convertor</a>             
+        <form action="https://www.amazon.com/s" method="get">
+            <label for="k">Amazon</label>
+            <input type="text" id="k" name="k">
+            <input type="submit" value="Enter or Click">
+        </form>
+
+        <h3> Stainless Steel Alloy 303/1.4305</h3>
+        <table border="1">
+
+            <caption><strong>Mechanical Properties</strong></caption>
+            <thead>
+                <th scope="col">Parameter</th>
+                <th scope="col">Indicator</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tensile Strength (MPa)</td>
+                    <td>500-750 MPa</td>
+                </tr>
+                <tr>
+                    <td>Proof Stress (MPa)</td>
+                    <td>190 Min MPa</td>
+                </tr>
+                <tr>
+                    <td>Elongation A5 mm</td>
+                    <td>35 Min %</td>
+                </tr>
+                <tr>
+                    <td>Hardness Brinell</td>
+                    <td>230 Max HB</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr>
+        <table border="1">
+            <caption><strong>Chemical Properties</strong> <br> (comparison with 304)</caption>
+            <thead>
+                <th scope="col">Elements %</th>
+                <th scope="col"> 303 1.4305 </th>
+                <th scope="col"> 304 1.4301 </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C</td>
+                    <td colspan="2">0,030</td>
+                </tr>
+                <tr>
+                    <td>Cr</td>
+                    <td>17,5-19,5</td>
+                    <td>17,0-19,0</td>
+                </tr>
+                <tr>
+                    <td>Ni</td>
+                    <td>8,0-10,5</td>
+                    <td>8,0-10,0</td>
+                </tr>
+                <tr>
+                    <td>Mo</td>
+                    <td>-</td>
+                    <td>0,5</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td colspan="2">0.045</td>
+                </tr>
+            </tbody>
+        </table>
+
 
     </div>
 
+    <br>
 
-
-    <div class="images">
+    <div class="images" style="float: right; width: 300px; height: 450px;">
         <hr>
         <h3>OUR FACILITIES</h3>
         <img src="https://cdn.thefabricator.com/a/alro-steel-opens-expanded-warehouse-in-ohio-1613497009.jpg?size=1000x1000"
@@ -131,7 +211,7 @@
         <iframe src="https://www.youtube.com/embed/VNj36VcUwLA" width="350" height="250">Video</iframe>
     </div>
 
-    <div class="contact details">
+    <div class="contact details" style="float: right; width: 300px; height: 550px;">
         <hr>
         <tr><strong>Contacts details +380 000 00 00 Sales manager GMetal</strong></tr>
         <hr>
